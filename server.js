@@ -18,8 +18,7 @@ app.get('/notes', (req, res) =>
 
 app.get('/api/notes', (req, res) => {
 
-    // ?? line 25 activity 20
-    res.json(/* send note data */)
+    res.json(db)
     console.info(`${req.method} request received to get note`);
 })
 
