@@ -2,7 +2,10 @@
 
 ## Description
 
-Insert screenshot here
+Take Note is an application that allows users to write and save notes. Once saved, each note is displayed on the left-hand side of the webpage and stored and saved into a database, which means it can be accessed at anytime from any browser. View the deployed application [here](https://take-note-express.herokuapp.com/).
+
+![Screenshot of index.html](./public/assets/indexhtml.png)
+![Screenshot of notes.html](./public/assets/noteshtml.png)
 
 ## User Story
 
@@ -32,5 +35,14 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Technologies Used
 
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- Node.js
+- Express.js
+- UUID
+
 ## License
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
