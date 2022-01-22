@@ -1,11 +1,11 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const db = require('./db/db.json');
+const notes = require('./db/db.json');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -25,7 +25,7 @@ app.get('/notes', (req, res) =>
 app.get('/api/notes', (req, res) => {
 
     // Send the notes in the database to the notes url being requested
-    res.json(db)
+    res.json(notes)
     console.info(`${req.method} request received to get note`);
 })
 
@@ -43,9 +43,9 @@ app.post('/api/notes', (req, res) => {
         };
         
         // Push the new note to my existing list of notes in the database
-        db.push(newNote);
+        notes.push(newNote);
 
-        const noteString = JSON.stringify(db, null, 2);
+        const noteString = JSON.stringify(notes, null, 2);
         
         // Write my updated note list to the 'db.json' file
         fs.writeFile(`./db/db.json`, noteString, (err) =>
@@ -73,15 +73,15 @@ app.delete('/api/notes/:id', (req, res) => {
         let idMatches = false;
 
         // Find the note in the database that matches the parameter id and take it out of the database array
-        for (let i = 0; i < db.length; i++) {
-            const currentNote = db[i];
+        for (let i = 0; i < notes.length; i++) {
+            const currentNote = notes[i];
             if (currentNote.id === noteId) {
-                db.splice(i, 1);
+                notes.splice(i, 1);
                 idMatches = true;
             }
         }
         if (idMatches) {
-            const noteString = JSON.stringify(db, null, 2);
+            const noteString = JSON.stringify(notes, null, 2);
         
             // Write my updated note list to the 'db.json' file
             fs.writeFile(`./db/db.json`, noteString, (err) =>
