@@ -1,34 +1,12 @@
 [
   {
     "title": "Test Title",
-    "text": "Test text"
-  },
-  {
-    "title": "Cool Note",
-    "text": "This is my first note"
-  },
-  {
-    "title": "fds",
-    "text": "fdsfds"
-  },
-  {
-    "title": "fdsaf",
-    "text": "ff"
-  },
-  {
-    "title": "Cool notesss",
-    "text": "yassssss"
-  },
-  {
-    "title": "This is my title",
-    "text": "This is the text"
-  },
-  {
-    "title": "This is my title",
-    "text": "This is the text"
+    "text": "Test text",
+    "id": 1
   },
   {
     "title": "Passwords",
-    "text": "IG: maiinsta\nWF: 0382984_3"
+    "text": "WF: Htfu65_yy7",
+    "id": "id: 27092628-c722-4322-8bd1-51db14b73394"
   }
 ]

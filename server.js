@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const db = require('./db/db.json');
+const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 const PORT = 3001;
@@ -27,11 +28,13 @@ app.post('/api/notes', (req, res) => {
 
     // Access the new note data from 'req
     const {title, text} = req.body;
+    let id = `id: ${uuidv4()}`
 
     if (title && text) {
         const newNote = {
             title,
-            text
+            text,
+            id 
         };
         
         // Push it to my existing list of notes
