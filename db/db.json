@@ -1,12 +1,17 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text",
-    "id": 1
+    "title": "Passwords",
+    "text": "GitHub: fiekkk24_3\nFB: mailau_398\nWF: maimula_1996!\n",
+    "id": "07006318-7305-4e50-9e5e-ef2e78489ae2"
   },
   {
-    "title": "Passwords",
-    "text": "WF: Htfu65_yy7",
-    "id": "id: 27092628-c722-4322-8bd1-51db14b73394"
+    "title": "Tasks",
+    "text": "- Laundry\n- Weekly budget\n- Grocery run\n- Deploy journaling app\n- HIIT workout 30 min",
+    "id": "05bef746-0046-4c58-ab3a-7e5e49ac1429"
+  },
+  {
+    "title": "Weekly Algorithms",
+    "text": "- FizzBuzz\n-  Most Songs in Playlist\n- Is Perfect Square\n- Array Search",
+    "id": "2af89ad0-85a4-4b55-a1c0-2a6918e5598b"
   }
 ]
