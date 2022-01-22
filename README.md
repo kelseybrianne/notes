@@ -2,7 +2,7 @@
 
 ## Description
 
-Take Note is an application that allows users to write and save notes. Once saved, each note is displayed on the left-hand side of the webpage and stored and saved into a database, which means it can be accessed at anytime from any browser. View the deployed application [here](https://take-note-express.herokuapp.com/).
+Take Note is an application that allows users to write and save notes. Once saved, each note is displayed on the left-hand side of the webpage and stored and saved into a database, which means it can be accessed at anytime from any browser. Each note can also be deleted via the trash icon displayed next to the note title. View the deployed application [here](https://take-note-express.herokuapp.com/).
 
 ![Screenshot of index.html](./public/assets/indexhtml.png)
 ![Screenshot of notes.html](./public/assets/noteshtml.png)
